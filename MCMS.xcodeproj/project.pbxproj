@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		D09485FD1B0BBBD000F63F85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D09485FC1B0BBBD000F63F85 /* main.m */; };
 		D09486001B0BBBD000F63F85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D09485FF1B0BBBD000F63F85 /* AppDelegate.m */; };
-		D09486031B0BBBD000F63F85 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D09486021B0BBBD000F63F85 /* ViewController.m */; };
+		D09486031B0BBBD000F63F85 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D09486021B0BBBD000F63F85 /* RootViewController.m */; };
 		D09486061B0BBBD000F63F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09486041B0BBBD000F63F85 /* Main.storyboard */; };
 		D09486081B0BBBD000F63F85 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D09486071B0BBBD000F63F85 /* Images.xcassets */; };
 		D094860B1B0BBBD000F63F85 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D09486091B0BBBD000F63F85 /* LaunchScreen.xib */; };
 		D09486171B0BBBD100F63F85 /* MCMSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D09486161B0BBBD100F63F85 /* MCMSTests.m */; };
+		D09486221B0BBBE300F63F85 /* MagicalCreature.m in Sources */ = {isa = PBXBuildFile; fileRef = D09486211B0BBBE300F63F85 /* MagicalCreature.m */; };
+		D09486281B0BE01E00F63F85 /* CreatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D09486271B0BE01E00F63F85 /* CreatureViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,18 @@
 		D09485FC1B0BBBD000F63F85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D09485FE1B0BBBD000F63F85 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D09485FF1B0BBBD000F63F85 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D09486011B0BBBD000F63F85 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D09486021B0BBBD000F63F85 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D09486011B0BBBD000F63F85 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		D09486021B0BBBD000F63F85 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		D09486051B0BBBD000F63F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D09486071B0BBBD000F63F85 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D094860A1B0BBBD000F63F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D09486101B0BBBD100F63F85 /* MCMSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCMSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09486151B0BBBD100F63F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D09486161B0BBBD100F63F85 /* MCMSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMSTests.m; sourceTree = "<group>"; };
+		D09486201B0BBBE300F63F85 /* MagicalCreature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MagicalCreature.h; path = ../MagicalCreature.h; sourceTree = "<group>"; };
+		D09486211B0BBBE300F63F85 /* MagicalCreature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MagicalCreature.m; path = ../MagicalCreature.m; sourceTree = "<group>"; };
+		D09486261B0BE01E00F63F85 /* CreatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatureViewController.h; sourceTree = "<group>"; };
+		D09486271B0BE01E00F63F85 /* CreatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatureViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +89,12 @@
 			children = (
 				D09485FE1B0BBBD000F63F85 /* AppDelegate.h */,
 				D09485FF1B0BBBD000F63F85 /* AppDelegate.m */,
-				D09486011B0BBBD000F63F85 /* ViewController.h */,
-				D09486021B0BBBD000F63F85 /* ViewController.m */,
+				D09486011B0BBBD000F63F85 /* RootViewController.h */,
+				D09486021B0BBBD000F63F85 /* RootViewController.m */,
+				D09486201B0BBBE300F63F85 /* MagicalCreature.h */,
+				D09486211B0BBBE300F63F85 /* MagicalCreature.m */,
+				D09486261B0BE01E00F63F85 /* CreatureViewController.h */,
+				D09486271B0BE01E00F63F85 /* CreatureViewController.m */,
 				D09486041B0BBBD000F63F85 /* Main.storyboard */,
 				D09486071B0BBBD000F63F85 /* Images.xcassets */,
 				D09486091B0BBBD000F63F85 /* LaunchScreen.xib */,
@@ -219,7 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D09486031B0BBBD000F63F85 /* ViewController.m in Sources */,
+				D09486281B0BE01E00F63F85 /* CreatureViewController.m in Sources */,
+				D09486031B0BBBD000F63F85 /* RootViewController.m in Sources */,
+				D09486221B0BBBE300F63F85 /* MagicalCreature.m in Sources */,
 				D09486001B0BBBD000F63F85 /* AppDelegate.m in Sources */,
 				D09485FD1B0BBBD000F63F85 /* main.m in Sources */,
 			);
@@ -418,6 +430,7 @@
 				D094861C1B0BBBD100F63F85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D094861D1B0BBBD100F63F85 /* Build configuration list for PBXNativeTarget "MCMSTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +439,7 @@
 				D094861F1B0BBBD100F63F85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
