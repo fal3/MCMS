@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CreatureViewController.h"
 
 @interface MagicalCreature : NSObject
 @property NSString *name;

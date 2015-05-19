@@ -10,6 +10,8 @@
 
 
 @interface CreatureViewController ()
+@property (weak, nonatomic) IBOutlet UITextView *detailTextView;
+@property (weak, nonatomic) IBOutlet UIImageView *image;
 
 @end
 
@@ -18,7 +20,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+
+    self.detailTextView.text = self.creature.detail;
+    self.image.image = [UIImage imageNamed:self.creature.image];
+
 }
 
+- (IBAction)onBattleTapped:(UIButton *)sender {
+}
+- (IBAction)onStartTapped:(UIButton *)sender {
+}
 
 @end

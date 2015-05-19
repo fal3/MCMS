@@ -8,6 +8,7 @@
 
 #import "RootViewController.h"
 #import "MagicalCreature.h"
+#import "CreatureViewController.h"
 
 
 @interface RootViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -27,8 +28,11 @@
 
 
     self.creatures = [NSMutableArray new];
+    MagicalCreature *creature1= [[MagicalCreature alloc] initWithDetails:@"Alex" detail:@"Beautiful AF" accessories:nil image:@"mario"];
+    MagicalCreature *andrew = [[MagicalCreature alloc] initWithDetails:@"Andrew" detail:@"Fashiony as hell" accessories:nil image:<#(NSString *)#>
 
 }
+
 
 
 
@@ -40,6 +44,14 @@
 
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    MagicalCreature * creature = [self.creatures objectAtIndex:indexPath.row];
+    CreatureViewController *creatureVC = segue.destinationViewController;
+    creatureVC.creature = creature;
+    creatureVC.title = creature.name;
+    
+}
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     MagicalCreature *creature = [self.creatures objectAtIndex:indexPath.row];
